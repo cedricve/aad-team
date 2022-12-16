@@ -67,6 +67,29 @@ After the script has been executed you will see three resource groups:
 
 > **Attention: Please see the Terraform output, it includes the SQL Server password and the SQL connection string**
 
+You should expect following results:
+
+    Apply complete! Resources: 21 added, 0 changed, 0 destroyed.
+
+    Outputs:
+
+    APPINSIGHTS_INSTRUMENTATIONKEY = "ba1f9939-c418-4a1c-950a-0940a4406821"
+    HOST = "https://unicor-218c3834.hcp.eastus2.azmk8s.io:443"
+    ID = "/subscriptions/e1ab74e7-a3f4-4acf-ae58-3dd8bf557e42/resourceGroups/unicor/providers/Microsoft.ContainerService/managedClusters/unicor"
+    KUBE_GROUP = "unicor"
+    KUBE_NAME = "unicor"
+    NODE_GROUP = "unicor_nodes_eastus2"
+    REGISTRY_NAME = "unicoracrfc99a2"
+    REGISTRY_PASSWORD = "y7BADRqN6qR7kaQWPIh3j4yahS6cvM3n3+uxXw6U1t+ACRChbU/A"
+    REGISTRY_URL = "unicoracrfc99a2.azurecr.io"
+    SERVICE_PRINCIPAL_ID = "6f4e556d-7bf6-4080-9bbe-77ca7e006ca0"
+    SQL_CONNECTION_STRING = "Server=tcp:game-sqlserver-fc99a2.database.windows.net,1433;Initial Catalog=gamedb;Persist Security Info=False;User ID=gamedbadministrator;Password=AA2flS00k8Bfiz4S;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    SQL_DATABASE_NAME = "gamedb"
+    SQL_FQDN = "game-sqlserver-fc99a2.database.windows.net"
+    SQL_PASSWORD = "AA2flS00k8Bfiz4S"
+    SQL_SERVER_LOCATION = "eastus2"
+    SQL_SERVER_NAME = "game-sqlserver-fc99a2"
+    SQL_SERVER_VERSION = "12.0"
 
 ## 2. Deploy the GameBot
 Deploy it using the following command.
