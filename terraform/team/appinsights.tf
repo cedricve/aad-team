@@ -4,7 +4,8 @@ resource "azurerm_application_insights" "aksainsights" {
   application_type    = "Node.JS"
   location            = azurerm_resource_group.aksrg.location
   resource_group_name = azurerm_resource_group.aksrg.name
-  workspace_id        = azurerm_log_analytics_workspace.akslogs.id
+  # For some reason its not able to return the workspace ID, event if the workspace was created. Needs a check
+  #workspace_id        = azurerm_log_analytics_workspace.akslogs.id
 
   tags = {
     environment = var.deployment_name
