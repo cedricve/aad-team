@@ -51,6 +51,13 @@ Avoid special characters and keep it short (6 chars max).
 ./deploy-team.sh <team_name> westeurope <subscription_id>
 ```
 
+> westeurope might be limited of resources, pick eastus2 for example
+
+For example
+``` 
+./deploy-team.sh unicor eastus2 e1ab74e7-xxxx-xxx-xxx-3dd8bf557e42
+``` 
+
 > Hint: This will take some minutes - take the time to look into the Terraform scripts, Kubernetes YAML files and provided source code from World Game Federation.
 
 After the script has been executed you will see three resource groups:
